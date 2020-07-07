@@ -1,0 +1,571 @@
+#video-main {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -999;
+  background-size: cover;
+}
+
+#video-main video {
+  filter: blur(0px) contrast(65%) brightness(0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* @media (max-aspect-ratio: 16/9){
+    #video-main video {
+        height: 300%;
+        top: -100%;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    #video-main video {
+        width: 300%;
+        height: -100%;
+    }
+} */
+@supports (object-fit: cover) {
+  #video-main video {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.header_top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+}
+
+.nav_bg {
+  position: relative;
+  margin: 0 10px;
+  padding: 5px 10px;
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 420px) {
+  .nav_bg {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 7px;
+  }
+}
+
+.town_main {
+  position: relative;
+  top: 37em;
+  left: 1em;
+  width: 10%;
+}
+
+.town {
+  position: relative;
+  font-size: 25px;
+  color: rgb(187, 187, 187);
+  font-family: "Indie Flower";
+}
+
+@media only screen and (width: 320px) and (height: 568px) {
+  .town_main {
+    position: relative;
+    top: 14em;
+    left: 0.5em;
+    width: 30%;
+  }
+}
+@media only screen and (width: 360px) and (height: 640px) {
+  .town_main {
+    position: relative;
+    top: 17em;
+    left: 0.5em;
+    width: 30%;
+  }
+}
+@media only screen and (width: 375px) and (height: 667px) {
+  .town_main {
+    position: relative;
+    top: 19em;
+    left: 0.5em;
+    width: 30%;
+  }
+}
+
+@media only screen and (width: 414px) and (height: 736px) {
+  .town_main {
+    position: relative;
+    top: 22em;
+    left: 0.5em;
+    width: 30%;
+  }
+}
+
+@media only screen and (width: 375px) and (height: 812px) {
+  .town_main {
+    position: relative;
+    top: 28em;
+    left: 0.5em;
+    width: 30%;
+  }
+}
+
+@media only screen and (width: 768px) and (height: 1024px) {
+  .town_main {
+    position: relative;
+    top: 42em;
+    left: 0.5em;
+    width: 30%;
+  }
+}
+
+@media only screen and (width: 1024px) and (height: 1366px) {
+  .town_main {
+    position: relative;
+    top: 65em;
+    left: 0.5em;
+    width: 40%;
+  }
+}
+@media only screen and (width: 1024px) and (height: 1366px) {
+  .town {
+    position: relative;
+    width: 50%;
+    font-size: 35px;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 420px) {
+  .town {
+    position: relative;
+    font-size: 18px;
+    width: 100%;
+  }
+}
+
+.tel {
+  position: relative;
+  font-size: 23px;
+  padding: 0.5em;
+  text-decoration: none;
+  top: 25px;
+  left: 1em;
+  color: #fff;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 420px) {
+  .tel {
+    font-size: 14px;
+    position: relative;
+    left: -4px;
+    top: 1em;
+  }
+}
+
+@media only screen and (width: 768px) and (height: 1024px) {
+  .tel {
+    font-size: 24px;
+    position: relative;
+    left: -4px;
+    top: 0.8em;
+  }
+}
+
+@media only screen and (width: 1024px) and (height: 1366px) {
+  .tel {
+    font-size: 32px;
+    position: relative;
+    left: -4px;
+    top: 1.4em;
+  }
+}
+
+.e-mail {
+  display: flex;
+  height: 0px;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+.e-mail a {
+  color: #fff;
+  text-decoration: none;
+  filter: blur(0px) contrast(65%) brightness(0.9);
+}
+
+@media only screen and (min-width: 360px) and (max-width: 420px) {
+  .e-mail a {
+    font-size: 18px;
+    position: absolute;
+    left: 1em;
+    top: 3.3em;
+  }
+}
+
+@media only screen and (width: 320px) and (height: 568px) {
+  .e-mail a {
+    font-size: 18px;
+    position: absolute;
+    left: 1em;
+    top: 2.5em;
+  }
+}
+
+@media only screen and (width: 768px) and (height: 1024px) {
+  .e-mail a {
+    font-size: 24px;
+    position: absolute;
+    left: 13em;
+    top: 0.8em;
+  }
+}
+
+@media only screen and (width: 1024px) and (height: 1366px) {
+  .e-mail a {
+    font-size: 36px;
+    position: absolute;
+    left: 11em;
+    top: 0.9em;
+  }
+}
+
+.belavin_brand {
+  display: flex;
+  /* float: right; */
+  position: relative;
+  justify-content: flex-end;
+  top: 70vh;
+  right: 2vw;
+  color: #fff;
+  text-shadow: 0 0 80px red, 0 0 30px FireBrick, 0 0 6px DarkRed;
+}
+
+.belavin_brand p {
+  font-weight: bold;
+  line-height: 30px;
+  color: #fff;
+  font-family: "Poiret One", cursive;
+  font-size: 2em;
+  text-shadow: 0 0px 0px, 0 0 2px, 0 0 1em #bfe2ff, 0 0 0.5em #bfe2ff,
+    0 0 0.1em #bfe2ff;
+}
+
+.belavin_brand p span {
+  animation: neon-4 linear infinite 3s;
+}
+
+@media only screen and (min-width: 375px) and (height: 812px) {
+  .belavin_brand {
+    position: fixed;
+    height: 12%;
+    width: 34%;
+    right: 10px;
+    top: 79vh;
+    font-size: 0.8em;
+    line-height: 1px;
+  }
+}
+
+@media only screen and (width: 375px) and (height: 667px) {
+  .belavin_brand {
+    position: fixed;
+    height: 12%;
+    width: 34%;
+    right: 10px;
+    top: 75vh;
+    font-size: 0.8em;
+    line-height: 1px;
+  }
+}
+
+@media only screen and (width: 414px) and (height: 736px) {
+  .belavin_brand {
+    position: fixed;
+    height: 12%;
+    width: 34%;
+    right: 10px;
+    top: 77vh;
+    font-size: 0.8em;
+    line-height: 1px;
+  }
+}
+
+@media only screen and (width: 360px) and (height: 640px) {
+  .belavin_brand {
+    position: fixed;
+    height: 12%;
+    width: 34%;
+    right: 10px;
+    top: 73vh;
+    font-size: 0.8em;
+    line-height: 1px;
+  }
+}
+
+@media only screen and (width: 320px) and (height: 568px) {
+  .belavin_brand {
+    position: fixed;
+    height: 12%;
+    width: 34%;
+    right: 10px;
+    top: 73vh;
+    font-size: 0.8em;
+    line-height: 1px;
+  }
+}
+
+@media only screen and (width: 1024px) and (height: 1366px) {
+  .belavin_brand {
+    position: fixed;
+    height: 12%;
+    width: 34%;
+    right: 20px;
+    top: 80vh;
+    font-size: 1.5em;
+    line-height: 1px;
+  }
+}
+
+@keyframes neon-4 {
+  78% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  79% {
+    color: #0b3960;
+  }
+  80% {
+    text-shadow: none;
+  }
+  81% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  82% {
+    color: #0b3960;
+    text-shadow: none;
+  }
+  83% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  92% {
+    color: #0b3960;
+    text-shadow: none;
+  }
+  92.5% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background: rgba(97, 97, 97, 0.24);
+}
+
+@media only screen and (width: 1024px) and (height: 1366px) {
+  footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 11%;
+    background: rgba(97, 97, 97, 0.24);
+  }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 420px) {
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    width: 100%;
+  }
+}
+
+.social a {
+  text-decoration: none;
+  text-align: center;
+  width: 40px;
+  height: 33px;
+  float: right;
+  right: 1.5em;
+  border: 1px solid #000;
+  box-shadow: 0 2px 4px rgba(95, 95, 95, 0.15),
+    inset 0 0 50px rgba(27, 27, 27, 0.281);
+  border-radius: 20px;
+  margin: 0 12px 10px 0;
+  padding: 5px;
+  color: #000;
+  size: 12px;
+  position: relative;
+  top: -8px;
+  background: gainsboro;
+}
+
+@media only screen and (width: 360px) and (height: 640px) {
+  .social a {
+    position: relative;
+    width: 9%;
+    height: 29px;
+    text-align: center;
+    float: right;
+    right: 13px;
+    border: 1px solid #000;
+    box-shadow: 0 2px 4px rgba(95, 95, 95, 0.15),
+      inset 0 0 50px rgba(27, 27, 27, 0.281);
+    border-radius: 10px;
+    margin: 0px 0px 0px 1px;
+    top: -4px;
+    font-size: 32px;
+  }
+}
+@media only screen and (width: 320px) and (height: 568px) {
+  .social a {
+    position: relative;
+    width: 9%;
+    height: 23px;
+    text-align: center;
+    float: right;
+    right: 2px;
+    border: 1px solid #000;
+    box-shadow: 0 2px 4px rgba(95, 95, 95, 0.15),
+      inset 0 0 50px rgba(27, 27, 27, 0.281);
+    border-radius: 22px;
+    margin: 0px 0px 0px 2px;
+    top: -3px;
+    font-size: 25px;
+  }
+}
+
+@media only screen and (width: 375px) and (height: 667px) {
+  .social a {
+    position: relative;
+    width: 9%;
+    height: 28px;
+    text-align: center;
+    float: right;
+    right: 20px;
+    border: 1px solid #000;
+    box-shadow: 0 2px 4px rgba(95, 95, 95, 0.15),
+      inset 0 0 50px rgba(27, 27, 27, 0.281);
+    border-radius: 12px;
+    margin: 0px 0px 0px 2px;
+    top: -3px;
+    font-size: 28px;
+  }
+}
+
+@media only screen and (width: 414px) and (height: 736px) {
+  .social a {
+    position: relative;
+    width: 9%;
+    height: 28px;
+    text-align: center;
+    float: right;
+    right: 20px;
+    border: 1px solid #000;
+    box-shadow: 0 2px 4px rgba(95, 95, 95, 0.15),
+      inset 0 0 50px rgba(27, 27, 27, 0.281);
+    border-radius: 12px;
+    margin: 0px 0px 0px 2px;
+    top: -3px;
+    font-size: 28px;
+  }
+}
+
+@media only screen and (width: 375px) and (height: 812px) {
+  .social a {
+    position: relative;
+    width: 9%;
+    height: 28px;
+    text-align: center;
+    float: right;
+    right: 20px;
+    border: 1px solid #000;
+    box-shadow: 0 2px 4px rgba(95, 95, 95, 0.15),
+      inset 0 0 50px rgba(27, 27, 27, 0.281);
+    border-radius: 12px;
+    margin: 0px 0px 0px 2px;
+    top: -3px;
+    font-size: 28px;
+  }
+}
+
+@media only screen and (width: 768px) and (height: 1024px) {
+  .social a {
+    position: relative;
+    width: 7%;
+    height: 35px;
+    text-align: center;
+    float: right;
+    right: 20px;
+    border: 1px solid #000;
+    box-shadow: 0 2px 4px rgba(95, 95, 95, 0.15),
+      inset 0 0 50px rgba(27, 27, 27, 0.281);
+    border-radius: 12px;
+    margin: 0px 0px 0px 6px;
+    top: -18px;
+    font-size: 36px;
+  }
+}
+
+@media only screen and (width: 1024px) and (height: 1366px) {
+  .social a {
+    position: relative;
+    width: 8%;
+    height: 54px;
+    text-align: center;
+    float: right;
+    right: 20px;
+    border: 1px solid #000;
+    box-shadow: 0 2px 4px rgba(95, 95, 95, 0.15),
+      inset 0 0 50px rgba(27, 27, 27, 0.281);
+    border-radius: 12px;
+    margin: 0px 0px 0px 6px;
+    top: -2px;
+    font-size: 53px;
+  }
+}
+
+.youtube a:hover {
+  background: #c4302b;
+  color: #fff;
+}
+.instagram a:hover {
+  background: linear-gradient(45deg, #f9ed32, #ee2a7b, #002aff);
+}
+.vk a:hover {
+  background: #5d84ae;
+  color: #fff;
+}
+.whatsapp a:hover {
+  background: #50b154;
+  color: #fff;
+}

@@ -1,0 +1,10 @@
+body {
+  background: rgb(65, 65, 65);
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}

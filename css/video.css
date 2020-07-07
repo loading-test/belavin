@@ -1,0 +1,86 @@
+body {
+    background: url(../img/thumb-1920-551467.png);
+}
+/* ------------------------------- */
+video {
+    width: 400px;
+    height: 200px;
+}
+@media only screen and (min-width: 320px) and (max-width: 420px){
+    video{
+        width: 200px;
+        height: 130px;
+    }
+}
+/* -------------------------------- */
+.main {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2vw;
+    padding: 6em;
+}
+@media only screen and (min-width: 320px) and (max-width: 420px){
+    .main{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2vw;
+        padding: 0em;
+        margin: 0px;
+    }
+}
+
+/* Надпись belavin */
+.belavin_brand {
+    display: block;
+    position: fixed;
+    right: 5vw;
+    bottom: 5vh;
+    color: #fff;
+    text-shadow: 0 0 80px red,0 0 30px FireBrick,0 0 6px DarkRed;
+}
+.belavin_brand p {
+    font-weight: bold;
+    line-height: 30px;
+    color: #FFF;
+    font-family: 'Poiret One', cursive;
+    font-size: 2em;
+    text-shadow: 0 0px 0px, 0 0 2px, 0 0 1em #BFE2FF, 0 0 0.5em #BFE2FF, 0 0 0.1em #BFE2FF;
+}
+.belavin_brand p span {
+    animation: neon-4 linear infinite 3s;
+}
+@keyframes neon-4 {
+    78% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+    79%{
+        color: #0b3960;
+    }
+    80% {
+        text-shadow: none;
+    }
+    81% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+    82% {
+        color: #0b3960;
+        text-shadow: none;
+    }
+    83% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+    92% {
+        color: #0b3960;
+        text-shadow: none;
+    }
+    92.5% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+}
+/* --------------------------------- */
